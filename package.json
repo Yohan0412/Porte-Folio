@@ -18,5 +18,10 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "lottie-react": "^2.4.1",
+    "react-burger-menu": "^3.1.0",
+    "react-router-dom": "^7.3.0"
   }
 }

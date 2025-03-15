@@ -1,0 +1,17 @@
+.footer-comp {
+  height: 150px;
+  background-color: black;
+  margin-top: 5rem;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nomPrenom {
+    color: white;
+    padding-top: 3rem;
+}
+
