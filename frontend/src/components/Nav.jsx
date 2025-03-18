@@ -8,6 +8,8 @@ function Nav() {
     <div className="navigation">
       <Menu>
         <a href="/">Home</a>
+        <a href="/about">A propos</a>
+        <a href="competences">Mes Compétences</a>
       </Menu>
     </div>
   );
