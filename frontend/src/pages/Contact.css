@@ -1,0 +1,38 @@
+.contact-page {
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: grey;
+}
+
+
+.box-contact-infos {
+    background-color: black;
+    height: auto;
+    margin-top: 5rem;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.title-contact {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.txt-contact {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
