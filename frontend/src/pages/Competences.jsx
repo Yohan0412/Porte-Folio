@@ -22,33 +22,33 @@ import Footer from "../components/Footer/Footer";
 
 export default function Competences() {
   const language = [
-    { name: "HTML", level: 95, img: html },
-    { name: "CSS", level: 95, img: css },
-    { name: "JavaScript & TypeScript", level: 94, img: Logojs },
-    { name: "Python", level: 75, img: logopy },
-    { name: "SQL", level: 80, img: logosql },
-    { name: "JAVA", level: 50, img: logoJava },
+    { id: 1, name: "HTML", level: 95, img: html },
+    { id: 2, name: "CSS", level: 95, img: css },
+    { id: 3, name: "JavaScript & TypeScript", level: 94, img: Logojs },
+    { id: 4, name: "Python", level: 75, img: logopy },
+    { id: 5, name: "SQL", level: 80, img: logosql },
+    { id: 6, name: "JAVA", level: 50, img: logoJava },
   ];
 
   const front = [
-    { name: "React", level: 96, img: logoReact },
-    { name: "Angular", level: 85, img: logoAngular },
-    { name: "Three JS", level: 70, img: threejs },
+    { id: 1, name: "React", level: 96, img: logoReact },
+    { id: 2, name: "Angular", level: 85, img: logoAngular },
+    { id: 3, name: "Three JS", level: 70, img: threejs },
   ];
 
   const back = [
-    { name: "Express", level: 90, img: logoExpress },
-    { name: "Node.js", level: 90, img: logoNode },
-    { name: "Nest.js", level: 85, img: logoNest },
-    { name: "Flask", level: 55, img: flask },
+    { id: 1, name: "Express", level: 90, img: logoExpress },
+    { id: 2, name: "Node.js", level: 90, img: logoNode },
+    { id: 3, name: "Nest.js", level: 85, img: logoNest },
+    { id: 4, name: "Flask", level: 55, img: flask },
   ];
 
   const devOps = [
-    { name: "Git et Git Hub", level: 91, img: logoGit },
-    { name: "Docker", level: 60, img: logoDocker },
+    { id: 1, name: "Git et Git Hub", level: 91, img: logoGit },
+    { id: 2, name: "Docker", level: 60, img: logoDocker },
   ];
 
-  const bdd = [{ name: "MySQL", level: 95, img: logoMysql }];
+  const bdd = [{ id: 1, name: "MySQL", level: 95, img: logoMysql }];
 
   return (
     <div className="competence">
