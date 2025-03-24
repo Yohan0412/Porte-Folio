@@ -24,7 +24,7 @@ export default function Home() {
               A propos de moi
             </button>
           </Link>
-          <Link to="/">
+          <Link to="/projets">
             <button type="button" className="styleButton">
               Mes Projets
             </button>
@@ -34,6 +34,7 @@ export default function Home() {
       <div className="photo">
         <img className="image" alt="PhotoDeMoi" src={photo} />
       </div>
+      <img path="Porte-Folio\frontend\src\assets\3d.png" alt="ggfg" />
     </div>
   );
 }

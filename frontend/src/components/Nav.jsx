@@ -9,7 +9,8 @@ function Nav() {
       <Menu>
         <a href="/">Home</a>
         <a href="/about">A propos</a>
-        <a href="competences">Mes Compétences</a>
+        <a href="/competences">Mes Compétences</a>
+        <a href="/projets">Mes Projets</a>
         <a href="/contact">Contactez Moi</a>
       </Menu>
     </div>

@@ -15,6 +15,9 @@ header {
 .titleHeader {
   color: white;
   align-items: center;
+  color: red;
+  animation: clignotement 2s infinite;
+  text-shadow: 3px 3px 5px red;
 }
 
 .imageContact {
@@ -29,4 +32,16 @@ header {
   right: 0;
   height: 100px;
   width: 100px;
+}
+
+@keyframes clignotement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
