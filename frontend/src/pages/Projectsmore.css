@@ -1,115 +1,114 @@
-.projects-more{
-    background-color: gray;
+.projects-more {
+  background-color: gray;
 }
 
 .box-project-balisage {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projet-box-more {
-    background-color: black;
-    margin-top: 2rem;;
-    width:85%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
+  background-color: black;
+  margin-top: 2rem;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .projet-data {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1.25rem;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.25rem;
 }
 
 .projet-image-box {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-projet-all {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.title-project{
-    color: #d3d3d3;
-    text-align: center;
-    font-size: 4rem;
-    background: linear-gradient(to right, red, #d3d3d3);
+.title-project {
+  color: #d3d3d3;
+  text-align: center;
+  font-size: 4rem;
+  background: linear-gradient(to right, red, #d3d3d3);
   -webkit-background-clip: text;
-   background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .projet-description {
-    color: #d3d3d3;
-    font-size: 0.85rem;
-    background: linear-gradient(to right, gray, #d3d3d3);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #d3d3d3;
+  font-size: 0.85rem;
+  background: linear-gradient(to right, gray, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .descriptions {
-    color: #d3d3d3;
-    text-align: center;
-    font-size: 1.75rem;
-    background: linear-gradient(to right, red, #d3d3d3);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #d3d3d3;
+  text-align: center;
+  font-size: 1.75rem;
+  background: linear-gradient(to right, red, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title-front {
-color: #d3d3d3;
-text-align: center;
-font-size: 1.75rem;
-background: linear-gradient(to right, red, #d3d3d3);
--webkit-background-clip: text;
- background-clip: text;
--webkit-text-fill-color: transparent;
+  color: #d3d3d3;
+  text-align: center;
+  font-size: 1.75rem;
+  background: linear-gradient(to right, red, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .techno-front {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to right, gray, #d3d3d3);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, gray, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .techno-back {
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to right, gray, #d3d3d3);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to right, gray, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title-back {
-    color: #d3d3d3;
-    text-align: center;
-    font-size: 1.75rem;
-    background: linear-gradient(to right, red, #d3d3d3);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+  color: #d3d3d3;
+  text-align: center;
+  font-size: 1.75rem;
+  background: linear-gradient(to right, red, #d3d3d3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-
-    .btn-git-projet {
+.btn-git-projet {
   margin-top: 2em;
   font-size: 16px;
   font-weight: bold;
@@ -120,51 +119,54 @@ background: linear-gradient(to right, red, #d3d3d3);
   background: linear-gradient(to right, gray, red); /* Dégradé gris → rouge */
   transition: background 0.3s ease; /* Effet de transition au survol */
   height: 35px;
- 
 }
 
 .btn-git-projet:hover {
-  background: linear-gradient(to right, red, gray); /* Inverser le dégradé au survol */
+  background: linear-gradient(
+    to right,
+    red,
+    gray
+  ); /* Inverser le dégradé au survol */
 }
 @media screen and (max-width: 768px) {
-    * {
-        font-size: 0.60rem;
-    }
-    .projects-more{
-        background-color: gray;
-        min-height: 100vh;
-    }
+  * {
+    font-size: 0.6rem;
+  }
+  .projects-more {
+    background-color: gray;
+    min-height: 100vh;
+  }
 
-    .box-project-balisage {
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 5rem;
-    }
-    .projet-box-more {
-        background-color: black;
-        height: 50vh;
-        margin-top: 2rem;;
-        display: flex;
-        flex-direction: row;
-    }
+  .box-project-balisage {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .projet-box-more {
+    background-color: black;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
 
-    .image-projet-all {
-        height: 50%;
-        width: 100%;
-    }
-    .btn-git-projet {
-        margin: 0;
-    }
-      
-    .projet-data {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 0.25rem;
-    }
+  .image-projet-all {
+    height: 50%;
+    width: 100%;
+  }
+  .btn-git-projet {
+    margin: 0;
+  }
+
+  .projet-data {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.25rem;
+  }
 }

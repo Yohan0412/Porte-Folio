@@ -1,0 +1,95 @@
+.admin {
+  min-height: 100vh;
+  width: 100%;
+  background-color: gray;
+}
+
+.title-admin {
+  font-weight: bold;
+  font-size: 40px;
+  color: #d3d3d3;
+  text-shadow: 5px 5px 5px black;
+  text-align: center;
+}
+
+.box-admin {
+  display: flex;
+  justify-content: center;
+}
+
+.box-form-admin {
+  height: auto;
+  width: 80%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #d3d3d3;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.title-add-projet {
+  text-align: center;
+  font-size: 30px;
+  color: #d3d3d3;
+  background: linear-gradient(to right, #d3d3d3, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.form-add-projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox-style {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d3d3d3;
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+.text-description {
+  height: 4rem;
+  width: 50%;
+}
+
+.path {
+  width: 50%;
+}
+
+.title-selection {
+  background: linear-gradient(to right, #d3d3d3, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-add-projet {
+  background-color: #ff4d4d;
+  color: white;
+  border: 2px solid #333333;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.btn-add-projet:hover {
+  background-color: #ff3333;
+  border-color: #666666;
+}
+
+.btn-add-projet:focus {
+  box-shadow: 0 0 5px 2px rgba(255, 77, 77, 0.5);
+}

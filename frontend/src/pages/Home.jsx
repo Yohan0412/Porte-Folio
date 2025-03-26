@@ -34,7 +34,6 @@ export default function Home() {
       <div className="photo">
         <img className="image" alt="PhotoDeMoi" src={photo} />
       </div>
-      <img path="Porte-Folio\frontend\src\assets\3d.png" alt="ggfg" />
     </div>
   );
 }

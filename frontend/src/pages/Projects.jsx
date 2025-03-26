@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
 import Header from "../components/Header/Header";
 import img from "../assets/dev.json";
-import Lottie from "lottie-react";
 
 export default function Projects() {
   return (
@@ -12,7 +12,7 @@ export default function Projects() {
       <h1 className="title-projects">Mes Projets</h1>
       <div className="balisage">
         <div className="projet-box">
-        <Lottie style={{ width: 350, height: 150 }} animationData={img} />
+          <Lottie style={{ width: 350, height: 150 }} animationData={img} />
           <h2>Stat'Hockey</h2>
           <p className="projet-description">
             C'est un site web qui relativise les projets du hockey sur glace au

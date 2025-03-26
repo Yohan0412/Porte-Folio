@@ -6,6 +6,9 @@ import Competences from "../pages/Competences";
 import Contact from "../pages/Contact";
 import Projects from "../pages/Projects";
 import ProjectsMore from "../pages/Projetctmore";
+import Admin from "../pages/Admin";
+import Login from "../pages/Login";
+import ProtectedRoute from "../components/ProtectedRoute";
 
 function Routeur() {
   return (
@@ -17,6 +20,10 @@ function Routeur() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projets" element={<Projects />} />
         <Route path="/projetsMore" element={<ProjectsMore />} />
+        <Route path="/login" element={<Login />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/admin" element={<Admin />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

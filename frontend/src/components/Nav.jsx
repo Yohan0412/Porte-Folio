@@ -12,6 +12,7 @@ function Nav() {
         <a href="/competences">Mes Compétences</a>
         <a href="/projets">Mes Projets</a>
         <a href="/contact">Contactez Moi</a>
+        <a href="/login">Login</a>
       </Menu>
     </div>
   );

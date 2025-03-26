@@ -43,7 +43,10 @@ export default function ProjectsMore() {
             <div className="techno-back">
               <p className="techno-back-here">Express js</p>
               <p className="techno-back-here">NodeJs</p>
-              <p className="techno-back-here">MySQL</p>
+            </div>
+            <h3 className="title-back">Base de Données:</h3>
+            <div className="techno-back">
+              <p className="techno-back-here">MySql</p>
             </div>
             <button type="button" className="btn-git-projet">
               Liens GitHub
