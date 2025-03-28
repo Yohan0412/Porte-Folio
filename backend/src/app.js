@@ -11,6 +11,7 @@ app.use(
   cors({
     origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
     optionsSuccessStatus: 200,
+    //  credentials: true,
   })
 );
 
@@ -24,6 +25,8 @@ app.use(express.static(path.join(__dirname, "..", "..", "frontend", "dist")));
 
 // API routes
 app.use(router);
+
+app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // Redirect all requests to the REACT app
 const reactIndexFile = path.join(
