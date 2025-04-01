@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  max-width: 100wh;
 }
 
 #root {
@@ -14,4 +15,12 @@ body {
 
 .App {
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 0.6rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }

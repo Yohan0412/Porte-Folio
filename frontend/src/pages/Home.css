@@ -1,8 +1,8 @@
-.home {
+.homep {
   background-image: url("../assets/Fond.svg");
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   height: 100vh;
   background-size: auto;
@@ -12,7 +12,7 @@
 .txt {
   display: flex;
   align-items: center;
-  width: 45%;
+  width: 50wh;
   height: 45%;
   text-align: center;
   flex-direction: column;
@@ -20,7 +20,7 @@
 }
 
 .photo {
-  width: 45%;
+  width: 50wh;
   height: 94%;
   border-radius: 8px;
 }
@@ -99,29 +99,6 @@
 }
 
 @media screen and (width <= 768px) {
-  .home {
-    overflow-y: auto;
-  }
-
-  .titleh2 {
-    font-size: 1.75rem;
-  }
-
-  .phraseIntro {
-    font-size: 0.75rem;
-  }
-
-  .txt {
-    margin-top: 40%;
-  }
-
-  .image {
-    padding-top: 5%;
-    width: 125%;
-    height: 100%;
-    align-items: center;
-  }
-
   .styleButton {
     border: 4px solid black;
     background-color: red;

@@ -8,8 +8,14 @@ class ProjectManager extends AbstractManager {
   insert(project) {
     return this.connection
       .query(
-        `INSERT INTO ${this.table} (name, description, image_1, image_2) VALUES (?, ?, ?, ?)`,
-        [project.name, project.description, project.image_1, project.image_2]
+        `INSERT INTO ${this.table} (name, description, image_1, image_2, link) VALUES (?, ?, ?, ?, ?)`,
+        [
+          project.name,
+          project.description,
+          project.image_1,
+          project.image_2,
+          project.link,
+        ]
       )
       .then(([result]) => result.insertId);
   }
@@ -17,10 +23,15 @@ class ProjectManager extends AbstractManager {
   linkTechnologies(projectId, technologyIds) {
     if (!technologyIds || technologyIds.length === 0) return Promise.resolve();
 
-    const values = technologyIds.map((techId) => [projectId, techId]);
+    const placeholders = technologyIds.map(() => "(?, ?)").join(", ");
+    const values = technologyIds.flatMap((techId) => [projectId, techId]);
+
+    // console.log("Placeholders:", placeholders);
+    // console.log("Values:", values);
+
     return this.connection.query(
-      `INSERT INTO projet_technologie (id_project, id_technologie) VALUES ?`,
-      [values]
+      `INSERT INTO projet_technologie (id_project, id_technologie) VALUES ${placeholders}`,
+      values
     );
   }
 
@@ -35,6 +46,13 @@ class ProjectManager extends AbstractManager {
     return this.connection.query(
       `DELETE FROM projet_technologie WHERE id_project = ?`,
       [projectId]
+    );
+  }
+
+  findById(id) {
+    return this.connection.query(
+      `select id, name, description, image_1, image_2, link from ${this.table} where id = ?`,
+      [id]
     );
   }
 

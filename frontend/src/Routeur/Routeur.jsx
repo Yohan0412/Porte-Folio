@@ -19,7 +19,7 @@ function Routeur() {
         <Route path="/competences" element={<Competences />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projets" element={<Projects />} />
-        <Route path="/projetsMore" element={<ProjectsMore />} />
+        <Route path="/projetsMore/:id" element={<ProjectsMore />} />
         <Route path="/login" element={<Login />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/admin" element={<Admin />} />

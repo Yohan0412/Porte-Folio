@@ -24,10 +24,12 @@ router.post(
   projetControllers.add
 );
 
+router.get("/technologie", technologieControllers.browsetech);
+router.get("/projets", projetControllers.browse);
+router.get("/technologie/:id", technologieControllers.getTech);
+router.get("/projet/:id", projetControllers.read);
 router.delete("/supprprojet", projetControllers.destroy);
-router.get("/technologie", technologieControllers.browse);
 router.post("/login", userControllers.log);
 router.get("/admin", userControllers.brows);
 router.post("/newadmin", hashPassword, userControllers.add);
-
 module.exports = router;

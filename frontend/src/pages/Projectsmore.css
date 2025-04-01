@@ -12,24 +12,24 @@
 
 .projet-box-more {
   background-color: black;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   width: 85%;
-  height: auto;
+  height: 650px;
   display: flex;
   flex-direction: row;
 }
 
 .projet-data {
   width: 50%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
   gap: 1.25rem;
 }
 
 .projet-image-box {
-  height: auto;
+  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -53,6 +53,7 @@
 
 .projet-description {
   color: #d3d3d3;
+  text-align: center;
   font-size: 0.85rem;
   background: linear-gradient(to right, gray, #d3d3d3);
   -webkit-background-clip: text;
@@ -119,6 +120,15 @@
   background: linear-gradient(to right, gray, red); /* Dégradé gris → rouge */
   transition: background 0.3s ease; /* Effet de transition au survol */
   height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 100%;
 }
 
 .btn-git-projet:hover {
@@ -135,6 +145,13 @@
   .projects-more {
     background-color: gray;
     min-height: 100vh;
+  }
+
+  .projet-image-box {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
   .box-project-balisage {
@@ -163,7 +180,7 @@
 
   .projet-data {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 1rem;

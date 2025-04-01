@@ -6,7 +6,7 @@ import photo from "../assets/Moi.png";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="homep">
       <Nav />
       <div className="txt">
         <h1 className="bonjour">Bonjour !!!</h1>

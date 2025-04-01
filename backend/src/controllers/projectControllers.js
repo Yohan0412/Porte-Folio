@@ -1,3 +1,5 @@
+/* eslint-disable prefer-const */
+/* eslint-disable camelcase */
 /* eslint-disable consistent-return */
 const path = require("path");
 const fs = require("fs");
@@ -31,35 +33,41 @@ const read = (req, res) => {
     });
 };
 
-const add = (req, res) => {
-  const { name, description, technologyIds } = req.body;
+const add = async (req, res) => {
+  let { name, description, technologyIds, link } = req.body;
+
+  if (typeof technologyIds === "string") {
+    technologyIds = JSON.parse(technologyIds);
+  }
+
+  // Assurer que technologyIds est bien un tableau d'entiers
+  const validTechnologyIds = Array.isArray(technologyIds)
+    ? technologyIds.map(Number)
+    : [];
+  // Vérifier les technologies validées
+
   // eslint-disable-next-line camelcase
   const image_1 = req.files?.image_1 ? req.files.image_1[0].filename : null;
-  // eslint-disable-next-line camelcase
   const image_2 = req.files?.image_2 ? req.files.image_2[0].filename : null;
-  const validTechnologyIds = Array.isArray(technologyIds) ? technologyIds : [];
-  // eslint-disable-next-line camelcase
-  const project = { name, description, image_1, image_2 };
+
+  const project = { name, description, image_1, image_2, link };
 
   models.project
-    .insert(project) // Insérer le projet
+    .insert(project)
     .then((insertId) => {
-      // Si des technologies sont sélectionnées, on les lie au projet
-      if (technologyIds && technologyIds.length > 0) {
-        return models.project.linkTechnologies(
-          insertId,
-          validTechnologyIds,
-          JSON.parse(technologyIds)
-        );
+      if (validTechnologyIds.length > 0) {
+        return models.project.linkTechnologies(insertId, validTechnologyIds);
       }
+      return insertId;
     })
-    .then(() => {
-      res
-        .status(201)
-        .json({ success: "✅ Projet et technologies ajoutés avec succès !" });
+    .then((projectId) => {
+      res.status(201).json({
+        success: "✅ Projet et technologies ajoutés avec succès !",
+        projectId,
+      });
     })
     .catch((err) => {
-      console.error("❌ Erreur lors de l'ajout du projet :", err);
+      console.error("❌ Erreur lors de l'ajout du projet : ", err);
       res.sendStatus(500);
     });
 };

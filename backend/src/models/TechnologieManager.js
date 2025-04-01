@@ -21,6 +21,16 @@ class TechnologieManager extends AbstractManager {
     ]);
   }
 
+  findNameTechnoByid(id) {
+    return this.connection.query(
+      `SELECT t.nom, t.type 
+FROM technologie t
+JOIN projet_technologie pt ON t.id = pt.id_technologie
+WHERE pt.id_project = ?; `,
+      [id]
+    );
+  }
+
   setConnection(connection) {
     this.connection = connection;
   }

@@ -22,8 +22,9 @@ CREATE TABLE project (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     description TEXT,
-    image1 VARCHAR(255),
-    image2 VARCHAR(255)
+    image_1 VARCHAR(255),
+    image_2 VARCHAR(255),
+    link VARCHAR(255);
 );
 
 CREATE TABLE projet_technologie (
@@ -54,4 +55,3 @@ CREATE TABLE admin (
     pseudo VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
-

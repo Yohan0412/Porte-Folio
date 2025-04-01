@@ -1,8 +1,11 @@
 const models = require("../models");
 
-const browse = (req, res) => {
+const getTech = (req, res) => {
+  // eslint-disable-next-line camelcase
+  const id_project = req.params.id;
+
   models.technologie
-    .findAll()
+    .findNameTechnoByid(id_project)
     .then(([rows]) => {
       res.send(rows);
     })
@@ -12,6 +15,19 @@ const browse = (req, res) => {
     });
 };
 
+const browsetech = (req, res) => {
+  models.technologie
+    .findAll()
+    .then(([rows]) => {
+      res.send(rows);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+};
+
 module.exports = {
-  browse,
+  getTech,
+  browsetech,
 };
